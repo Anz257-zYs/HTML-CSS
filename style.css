@@ -1,0 +1,231 @@
+body {
+    font-family: sans-serif;
+margin : 0px;
+}
+nav {
+    background : #ddd;
+    justify-content : space-between;
+    padding : 10px;
+    display : flex;
+    border-radius : 10px;
+    margin : 10px;
+
+}
+img{
+width : 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+
+.nav-link {
+display : flex;
+list-style : none;
+color : #ddd;
+justify-content: end;
+}
+
+li a{
+margin : 10px;
+background-color : #3f4648;
+padding : 10px 15px;
+border-radius : 5px;
+color : #ddd;
+text-decoration: none;
+cursor : pointer;
+transition : 0.3s;
+}
+
+li a:hover {
+ background-color: #007bff;
+ color : yellow;
+ padding : 13px 18px;
+ box-shadow : 0px 4px 5px rgba(0,0,0,0.3);
+}
+.text-judul{
+display : flex;
+flex-direction: column;
+line-height: 1.1;
+}
+
+.judul{
+    font-weight : bold;
+    font-size : 20px;
+    color : gray;
+}
+
+.subjudul {
+    font-size : 14px;
+    color : gray;
+}
+
+input {
+    display: flex;
+    margin : 10px;
+    border-radius: 10px;
+    width : 130px;
+    height : 35px;
+    border : 3px solid #525252;
+    box-shadow : 0px 4px 5px rgba(0,0,0,0.1);
+    background-color: #9f9f9f;
+    color : #323232;
+    cursor: pointer;
+}
+
+
+
+::placeholder{
+    color : #ffffff;
+}
+
+.div-img {
+    background-color : #ddd;
+    margin-top : 150px;
+    display: flex;
+    gap : 16px ;
+    justify-content: start;
+    padding : 10px;
+    width: 250px;
+    border-radius : 20px;
+    align-items: center;
+}
+
+.my-img {
+    border-radius : 16px;
+    display : flex;
+    justify-content: center;
+    filter : grayscale(1);
+    width : 250px;
+    transition : filter 0.3s ease-in-out;
+}
+ .my-img:hover{
+    filter : grayscale(0);
+}
+.p-info {
+    display: flex;
+    justify-content: end;
+    margin-right : 100px;
+    font-size: 14px;
+    background-color: #ddd;
+    width : 500px;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom : 100px;
+    margin-top : 65px;
+    border-radius : 20px;
+}
+
+.div-isi {
+    justify-content: center;
+    align-items : center;
+    display : flex;
+    gap : 16px;
+}
+
+.porto-img {
+    width : 150px ;
+    border-radius : 20px ;
+    display : flex ;
+    justify-content: space-between;
+}
+
+.div-portoimg {
+    background-color : #ddd;
+    margin-top : 150px;
+    display: flex;
+    gap : 16px ;
+    justify-content: start;
+    padding : 10px;
+    width: 250px;
+    border-radius : 20px;
+    align-items: center;
+    width: 450px ;
+}
+
+.commision {
+    justify-content: center;
+    flex-direction: column;
+    display : flex ;
+    margin-top : 40px;
+    background-color: #ddd;
+    padding : 10px 20px;
+    align-items : center ;
+}
+
+.a-logo {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+
+.div-logo {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 20px ;
+}
+
+.video-p {
+    border-radius : 20px;
+}
+.div-portovid {
+    width : 1400px;
+    background-color : #ddd;
+    margin-top : 150px;
+    display: flex;
+    gap : 16px ;
+    justify-content: start;
+    padding : 10px;
+    border-radius : 20px;
+    align-items: center;
+}
+.div-kemampuan {
+    background-color: #ddd;
+    align-items: center;
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 107px;
+}
+
+.div-kemfoto {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 20px ;
+}
+.body-gradient {
+    background : linear-gradient(45deg, #007bff 0%, #8000ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background : radial-gradient(circle at 0% 0%, #007bff 0%, transparent 50%),
+                 radial-gradient(circle at 100% 100%, #8000ff 0%, transparent 50%),
+                 linear-gradient(to right, #007bff 0%, #8000ff 100%);
+    background-size: 200% 200%;
+    animation : animateliquid 15s infinite alternate linear;
+    z-index: 1;
+}
+
+@keyframes animateliquid {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+.div-work {
+    background-color: #ddd;
+    align-items: center;
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 107px;
+    padding : 10px ;
+    width : 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
