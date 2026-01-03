@@ -19,6 +19,12 @@ width : 50px;
     display: flex;
     align-items: center;
     gap : 10px;
+    filter : grayscale(1);
+    transition: filter 0.3s ease-in-out;
+}
+
+.logo:hover {
+filter : grayscale(0);
 }
 
 .nav-link {
@@ -54,12 +60,24 @@ line-height: 1.1;
 .judul{
     font-weight : bold;
     font-size : 20px;
-    color : gray;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    cursor : pointer;
+}
+
+.judul:hover {
+    opacity: 1;
 }
 
 .subjudul {
     font-size : 14px;
-    color : gray;
+    opacity : 0.5;
+    transition : opacity 0.3s ease-in-out;
+    cursor : pointer;
+}
+
+.subjudul:hover {
+    opacity: 1;
 }
 
 input {
@@ -170,7 +188,14 @@ input {
 
 .video-p {
     border-radius : 20px;
+    filter :blur(1);
+    transition: filter 0.3s ease-in-out;
 }
+
+.video-p:hover {
+    filter : blur(0);
+}
+
 .div-portovid {
     width : 1400px;
     background-color : #ddd;
@@ -229,3 +254,9 @@ input {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
+h1::before{
+   content : '^'; 
+   opacity: 0.5;
+}
+
