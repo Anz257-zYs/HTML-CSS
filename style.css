@@ -23,7 +23,7 @@ width : 50px;
     transition: filter 0.3s ease-in-out;
 }
 
-logo:hover {
+.logo:hover {
 filter : grayscale(0);
 }
 
